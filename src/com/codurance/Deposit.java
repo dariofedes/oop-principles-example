@@ -4,8 +4,12 @@ public class Deposit {
     private int amount;
     private String date;
 
-    Deposit(int amount, String date) {
+    Deposit(int amount) {
         this.amount = amount;
-        this.date = date;
+        this.date = getDate();
+    }
+
+    private String getDate() {
+        return "fake date";
     }
 }

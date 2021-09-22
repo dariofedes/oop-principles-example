@@ -4,8 +4,12 @@ public class Withdraw {
     private int amount;
     private String date;
 
-    Withdraw(int amount, String date) {
+    Withdraw(int amount) {
         this.amount = amount;
-        this.date = date;
+        this.date = getDate();
+    }
+
+    private String getDate() {
+        return "fake date";
     }
 }

@@ -8,25 +8,17 @@ public class Account {
     private List<Withdraw> withdraws;
 
     public void deposit(int amount) {
-        String date = getDate();
-
-        Deposit deposit = new Deposit(amount, date);
+        Deposit deposit = new Deposit(amount);
 
         deposits.add(deposit);
     }
 
     public void withdraw(int amount) {
-        String date = getDate();
-
-        Withdraw withdraw = new Withdraw(amount, date);
+        Withdraw withdraw = new Withdraw(amount);
 
         withdraws.add(withdraw);
     }
 
     public void printStatement(int amount) {
-    }
-
-    private String getDate() {
-        return "fake date";
     }
 }
