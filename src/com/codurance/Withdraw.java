@@ -1,15 +1,7 @@
 package com.codurance;
 
-public class Withdraw {
-    private int amount;
-    private String date;
-
+public class Withdraw extends Operation {
     Withdraw(int amount) {
-        this.amount = amount;
-        this.date = getDate();
-    }
-
-    private String getDate() {
-        return "fake date";
+        super(amount);
     }
 }
