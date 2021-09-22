@@ -1,8 +1,8 @@
 package com.codurance;
 
 public class Withdraw {
-    int amount;
-    String date;
+    private int amount;
+    private String date;
 
     Withdraw(int amount, String date) {
         this.amount = amount;

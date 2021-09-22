@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Account {
 
-    List<Deposit> deposits;
-    List<Withdraw> withdraws;
+    private List<Deposit> deposits;
+    private List<Withdraw> withdraws;
 
     public void deposit(int amount) {
         String date = getDate();
