@@ -19,5 +19,13 @@ public class Account {
     }
 
     public void printStatement(int amount) {
+        int statement = 0;
+
+        for(Operation operation : operations) {
+            if(operation instanceof  Deposit) statement += operation.amount;
+            if(operation instanceof Withdraw) statement -= operation.amount;
+        }
+
+        System.out.println(statement);
     }
 }
